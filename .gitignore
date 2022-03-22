@@ -127,4 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-*.py
+Django_try/
