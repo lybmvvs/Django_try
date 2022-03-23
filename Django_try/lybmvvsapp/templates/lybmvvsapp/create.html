@@ -1,0 +1,17 @@
+{% extends 'lybmvvsapp/base.html' %}
+{% block title %}
+Добавить своё
+{% endblock %}
+
+{% block content %}
+    <h1>Добавить своё</h1>
+    <form method="post" >
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.lyrics }}<br>
+
+        <button type="submit" class="btn btn-success">Добавить </button>
+        <span>{{ error }}</span>
+    </form>
+
+{% endblock %}

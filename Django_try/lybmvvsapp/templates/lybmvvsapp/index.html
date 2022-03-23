@@ -1,9 +1,18 @@
 {% extends 'lybmvvsapp/base.html' %}
 {% block title %}
-Главная страница
+{{ title }}
 {% endblock %}
 
 {% block content %}
-    <h1>Всем привет!</h1>
-     <p>тут будет мой PetProject</p>
+    <h1>понаписали</h1>
+    {% if tasks %}
+         {% for el in tasks %}
+            <div class="allert allert_warning mt-4">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.lyrics }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+       <p>Нет хороших стихов...</p>
+    {% endif %}
 {% endblock %}
