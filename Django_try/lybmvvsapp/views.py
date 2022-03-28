@@ -20,7 +20,7 @@ def create(request):
             return redirect('home')
 
         else:
-            error = 'Плохие стихи'
+            error = 'плохо написал'
     form = TaskForm()
     context = {'form': form,
                'error': error}
