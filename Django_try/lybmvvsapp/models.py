@@ -11,4 +11,6 @@ class Task(models.Model):
         verbose_name = 'Текст'
         verbose_name_plural = 'Тексты'
 
+
+
 # Create your models here.
