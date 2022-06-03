@@ -6,3 +6,9 @@ A small website where **all users** can upload the lyrics of their own songs and
 Or just post trash, hope nah.
 
 Enjoy.
+
+ps
+
+*python manage.py test -v 2* 
+
+for test running
